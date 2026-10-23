@@ -1,0 +1,3 @@
+# Twin of meas32 (meas32 ran on 16 ranks). Submit:
+#   WALLTIME=24:00:00 scripts/submit_hpc_array.sh twins_meas32.txt 16
+meas32.base     0.7   0   32   4.0   3.5   160   --twin-of meas32

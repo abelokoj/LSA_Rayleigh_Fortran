@@ -1,0 +1,19 @@
+record: runs/records/amp32_100.dat
+  samples 162   t =     0.0000 ..    13.0026
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     7.8829 ..     8.9393  (14 samples,   0.35 e-folds)
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.327304   1 - r^2 =  9.222E-07
+  viscous exact  =   0.329367   (  -0.626 %)
+  inviscid       =   0.343327   (  -4.667 %)
+  two-fluid visc =   0.328689   (  -0.421 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      6.9077      0.326094        26   4.534E-06
+      7.9641      0.327399        13   7.258E-07
+      9.0206           n/a
+      9.9958           n/a
+     11.0522           n/a
+  spread  1.306E-03  (  0.399 % of the rate)
+  wrote runs/analysis/records/amp32_100.csv

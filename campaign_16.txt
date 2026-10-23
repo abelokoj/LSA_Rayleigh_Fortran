@@ -1,0 +1,56 @@
+# =====================================================================
+# campaign_16.txt -- the October 2026 run campaign at 16 cells per radius.
+# =====================================================================
+# Read by scripts/run_all.sh (through scripts/submit_campaign.sh). Same columns as full_analysis.txt, plus optional make_inputs options after the seventh column:
+#
+#   label  kr0  eps  cells_per_r0  rmax  n_periods  snapshots  [options]
+#
+# With --eps-cells C the amplitude used is C * dr and the eps column is only a label (it must be positive; a zero means "twin").
+#
+# Why these cases. The archived study (September 2026 evidence report) established the reference rate at k r0 = 0.7 from small-amplitude runs (meas08/16/32, eps = 5e-3), but everything else was run at eps = 2e-2, which reaches a/r0 = 0.1 before the startup transient has decayed: re-fitting those records with run_lsa record leaves windows of only 0.2 e-folds (res08/16/32, disp*, domain06). No DMD result was kept, and no twin exists beside meas16 or meas32. This file supplies what is missing, at the resolution the thesis needs (at least 16 cells per radius, Chapter 5):
+#
+#   A. dispersion sweep at a small amplitude, with twins, so that every wavenumber has both an interface rate and a DMD rate over a clean window;
+#   B. proportionality over the whole fitting interval (the archived amplitude sweep stopped at t = 3.6);
+#   C. a time-step refinement at fixed grid (never done);
+#   D. one-at-a-time changes of the outer wall, the gas density and the gas viscosity;
+#   E. the stable-band control, long enough to see the oscillation, with signed coefficients.
+#
+# Amplitude. eps = 0.04 dr = 2.5e-3 at 16 cells (--eps-cells 0.04, the eps = c dx prescription of dissertation eq:4_norm). Halving the amplitude of the meas runs buys ln 2 = 0.69 e-folds more of clean window before a/r0 = 0.1. n_periods = 4.3 ends the run just past that bound: ln(0.1/0.0025) = 3.7 e-folds plus about half an e-fold of startup lag. Running further only adds nonlinear data.
+#
+# Snapshots. 160 per run gives about 40 samples in the admissible window, enough for the window fit and for DMD; more only costs disk and I/O.
+#
+# Twins. One .base per wavenumber; the base state does not depend on eps, so sw070_16.base also serves lin050_16 and lin100_16. Twins and perturbed runs MUST be in the same array submission so that they run on the same rank count and build.
+#
+# Order. Longest first, so the array finishes as early as possible. The three longest wavenumbers are in campaign_16_wide.txt, submitted with twice the ranks.
+# =====================================================================
+
+# --- A. dispersion sweep, eps = 0.04 dr, with twins -----------------
+# k r0 = 0.2, 0.3 and 0.4 are in campaign_16_wide.txt: their boxes are 2-3.5 times longer and they grow slowly, so they run on 32 ranks in a separate array.
+sw050_16        0.5   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw050_16.base   0.5   0   16   4.0   4.3   160
+sw060_16        0.6   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw060_16.base   0.6   0   16   4.0   4.3   160
+sw070_16        0.7   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw070_16.base   0.7   0   16   4.0   4.3   160
+sw080_16        0.8   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw080_16.base   0.8   0   16   4.0   4.3   160
+sw090_16        0.9   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw090_16.base   0.9   0   16   4.0   4.3   160
+
+# --- B. proportionality at k r0 = 0.7 over the full window -----------
+# Same n_periods and snapshots as sw070_16, so the plot cadence is identical and run_lsa linearity compares the same instants. eps = 2.5e-3 is sw070_16 itself; the twin is sw070_16.base.
+lin050_16       0.7   5e-3   16   4.0   4.3   160
+lin100_16       0.7   1e-2   16   4.0   4.3   160
+
+# --- C. time-step refinement at fixed grid ---------------------------
+# Half the time step of sw070_16 (safety 0.125 instead of 0.25); compare the interface rate over the same physical window.
+dts125_16       0.7   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04 --safety 0.125
+
+# --- D. modelling: wall, gas density, gas viscosity, one at a time ----
+dom06_16        0.7   2.5e-3 16   6.0   4.3   160   --eps-cells 0.04
+rhog10_16       0.7   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04 --rho-g 1.225e-4
+mug10_16        0.7   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04 --mu-g 2.6e-5
+
+# --- E. stable-band control -------------------------------------------
+# k r0 = 1.1 has no growing mode; n_periods counts capillary times here, so 20 covers about one inviscid period (18.9). The amplitude may be larger since the mode decays; the record's signed coefficients (columns 4-5) give the frequency and damping through plotting/fit_stable_band.py.
+stab110_16      1.1   1e-2   16   4.0   20    200

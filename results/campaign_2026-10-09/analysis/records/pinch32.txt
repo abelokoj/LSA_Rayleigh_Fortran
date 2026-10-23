@@ -1,0 +1,17 @@
+record: runs/records/pinch32.dat
+  samples 243   t =     0.0000 ..    18.1861
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     6.1378 ..     6.8198  (10 samples,   0.22 e-folds)
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.322115   1 - r^2 =  2.901E-06
+  viscous exact  =   0.329367   (  -2.202 %)
+  inviscid       =   0.343327   (  -6.178 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      9.7750           n/a
+     11.2148           n/a
+     12.6545           n/a
+     14.1700           n/a
+     15.6098           n/a
+  wrote runs/analysis/records/pinch32.csv

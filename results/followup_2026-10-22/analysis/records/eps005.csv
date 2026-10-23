@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/eps005.dat,  0.7000,  1.82739842E+00,  3.59769065E+00,33,  2.42477217E-01,  2.4928E-03,  0.4293,F,F,  3.29367103E-01,  3.43326801E-01,  3.28688702E-01

@@ -1,0 +1,51 @@
+--- a/NS_fluids_lib/NavierStokes.H
++++ b/NS_fluids_lib/NavierStokes.H
+@@ -2260,6 +2260,8 @@
+     static Real projection_velocity_scale;
+ 
+     static Real LSA_velocity_scale;
++    // LSA_levelset_scale: the level-set part of the first Krylov member is normalised to LSA_levelset_scale*dx_finest (default 2.0, the former hard-coded value).
++    static Real LSA_levelset_scale;
+     static Real LSA_temperature_scale;
+ 
+     static Vector<Real> vorterr; // 0 to disable
+--- a/NS_fluids_lib/NavierStokes.cpp
++++ b/NS_fluids_lib/NavierStokes.cpp
+@@ -559,6 +559,7 @@
+ Real NavierStokes::projection_velocity_scale=1.0;
+ 
+ Real NavierStokes::LSA_velocity_scale=0.1;
++Real NavierStokes::LSA_levelset_scale=2.0;
+ Real NavierStokes::LSA_temperature_scale=0.1;
+ 
+ int NavierStokes::num_elements_blobclass=-32767;
+@@ -5111,6 +5112,11 @@
+     }
+ 
+     pp.queryAdd("LSA_velocity_scale",LSA_velocity_scale);
++    pp.queryAdd("LSA_levelset_scale",LSA_levelset_scale);
++    if (LSA_levelset_scale>0.0) {
++     //do nothing
++    } else
++     amrex::Error("LSA_levelset_scale invalid");
+     pp.queryAdd("LSA_temperature_scale",LSA_temperature_scale);
+ 
+     projection_pressure_scale=1.0;
+@@ -6499,6 +6505,8 @@
+ 
+      std::cout << "LSA_velocity_scale " << 
+        LSA_velocity_scale << '\n';
++     std::cout << "LSA_levelset_scale " << 
++       LSA_levelset_scale << '\n';
+ 
+       //in AMReX_MemPool.cpp and AMReX_FArrayBox.cpp: 
+       // ParmParse pp("fab");
+@@ -11811,7 +11819,7 @@
+     im*num_state_material+ENUM_TEMPERATUREVAR]=1.0;
+  } //im=0 .. nmat-1
+  for (int im=0;im<num_materials;im++) {
+-  LS_scale_parm[im]=2.0*dx_finest[0];
++  LS_scale_parm[im]=LSA_levelset_scale*dx_finest[0];
+  }
+ 
+  if (1==1) {

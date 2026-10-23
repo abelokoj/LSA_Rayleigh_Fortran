@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/visc100r8_16.dat,  0.7000,  9.05758539E+00,  1.40057107E+01,60,  3.04411869E-01,  2.2185E-07,  1.5063,T,T,  3.29367103E-01,  3.43326801E-01,  3.04747628E-01

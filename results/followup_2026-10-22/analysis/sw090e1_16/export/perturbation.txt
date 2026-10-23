@@ -1,0 +1,10 @@
+n_space = 14336
+n_snap = 201
+grid_nx_ny_ncomp = 64 112 2
+domain_lo_r_lo_z_hi_r_hi_z =   0.0000000000000000E+00  0.0000000000000000E+00  4.0000000000000000E+00  6.9813170080000004E+00
+dt =   1.0716279005776549E-01
+weight = none
+perturbed = runs/sw090e1_16
+base = runs/sw090e1_16.base
+fields = x_velocity y_velocity
+python = X = np.fromfile('perturbation.bin','<f8').reshape((n_space, n_snap), order='F')

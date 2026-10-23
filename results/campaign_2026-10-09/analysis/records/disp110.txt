@@ -1,0 +1,16 @@
+record: runs/records/disp110.dat
+  samples 124   t =     0.0000 ..     4.9980
+  amplitude bound a/r0 <=  0.100   (not reached)
+  window t =     2.5400 ..     4.9980  (62 samples,  -2.91 e-folds)
+  WARNING: the local growth rate never settled to within the tolerance; the window is the second half of the linear part and the rate is a finite-window value, not an asymptotic one
+  growth rate s =  -1.182785   1 - r^2 =  2.327E-01
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      2.7038     -1.270569        58   2.278E-01
+      3.1135     -1.553141        48   2.136E-01
+      3.4822     -1.930656        39   1.969E-01
+      3.8919     -2.623762        29   1.690E-01
+      4.3015     -4.030925        19   1.169E-01
+  spread  2.760E+00  (233.378 % of the rate)
+  wrote runs/analysis/records/disp110.csv

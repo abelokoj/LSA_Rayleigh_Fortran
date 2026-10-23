@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/disp030.dat,  0.3000,  5.78090462E+00,  1.13553484E+01,28,  1.85892008E-01,  4.8359E-04,  1.0362,F,T,  1.98573885E-01,  2.01236472E-01,  1.98137638E-01

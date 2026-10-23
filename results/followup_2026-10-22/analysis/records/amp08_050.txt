@@ -1,0 +1,18 @@
+record: runs/records/amp08_050.dat
+  samples 166   t =     0.0000 ..    13.0466
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     8.9349 ..    10.9907  (27 samples,   0.68 e-folds)
+  growth rate s =   0.330026   1 - r^2 =  5.646E-07
+  viscous exact  =   0.329367   (   0.200 %)
+  inviscid       =   0.343327   (  -3.874 %)
+  two-fluid visc =   0.328689   (   0.407 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      6.9582      0.328680        52   5.588E-06
+      7.9861      0.329450        39   2.087E-06
+      9.0140      0.330069        26   4.776E-07
+     10.1210      0.330408        12   2.147E-09
+     11.1489           n/a
+  spread  1.728E-03  (  0.523 % of the rate)
+  wrote runs/analysis/records/amp08_050.csv

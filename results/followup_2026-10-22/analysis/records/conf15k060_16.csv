@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/conf15k060_16.dat,  0.6000,  8.90538316E+00,  1.38317653E+01,53,  3.10603933E-01,  2.3893E-07,  1.5302,T,T,  3.21743187E-01,  3.32127868E-01,  3.21109234E-01

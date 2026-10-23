@@ -1,0 +1,13 @@
+# =====================================================================
+# campaign_16_wide.txt -- the long-box, slow-growth part of the dispersion sweep.
+# =====================================================================
+# Same study as campaign_16.txt (read its header). These wavenumbers have boxes of 64 x 256 to 64 x 504 cells (64 to 128 boxes of 16 x 16) and need 11 000 to 20 000 steps, so they are submitted as their own array on 32 ranks; on 16 ranks the k r0 = 0.2 pair alone would take about 16 hours. Twins are in the same file so they get the same rank count.
+#
+# label         kr0   eps     cells  rmax  n_periods  snapshots  options
+# =====================================================================
+sw020_16        0.2   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw020_16.base   0.2   0   16   4.0   4.3   160
+sw030_16        0.3   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw030_16.base   0.3   0   16   4.0   4.3   160
+sw040_16        0.4   2.5e-3 16   4.0   4.3   160   --eps-cells 0.04
+sw040_16.base   0.4   0   16   4.0   4.3   160

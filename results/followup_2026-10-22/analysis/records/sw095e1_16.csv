@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/sw095e1_16.dat,  0.9500,  2.85961684E+01,  2.93408603E+01,6,  1.81603063E-01,  1.9122E-06,  0.1352,T,T,  1.75493930E-01,  1.99198053E-01,  1.74895587E-01

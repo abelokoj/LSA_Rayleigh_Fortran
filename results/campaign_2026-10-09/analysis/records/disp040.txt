@@ -1,0 +1,17 @@
+record: runs/records/disp040.dat
+  samples 123   t =     0.0000 ..    19.7265
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     8.1514 ..     8.9666  (6 samples,   0.20 e-folds)
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.247417   1 - r^2 =  1.906E-06
+  viscous exact  =   0.251992   (  -1.816 %)
+  inviscid       =   0.256692   (  -3.613 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+     10.5969           n/a
+     12.2272           n/a
+     13.8574           n/a
+     15.3247           n/a
+     16.9550           n/a
+  wrote runs/analysis/records/disp040.csv

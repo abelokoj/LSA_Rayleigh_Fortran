@@ -1,0 +1,10 @@
+n_space = 36864
+n_snap = 182
+grid_nx_ny_ncomp = 128 144 2
+domain_lo_r_lo_z_hi_r_hi_z =   0.0000000000000000E+00  0.0000000000000000E+00  8.0000000000000000E+00  8.9759790099999996E+00
+dt =   8.3866531334547509E-02
+weight = none
+perturbed = runs/visc100r8_16
+base = runs/visc100r8_16.base
+fields = x_velocity y_velocity
+python = X = np.fromfile('perturbation.bin','<f8').reshape((n_space, n_snap), order='F')

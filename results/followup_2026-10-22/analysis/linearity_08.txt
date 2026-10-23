@@ -1,0 +1,23 @@
+[eps= 2.500E-03] reading runs/amp08_025
+[eps= 5.000E-03] reading runs/amp08_050
+[eps= 1.000E-02] reading runs/amp08_100
+
+
+Proportionality (linearity) test
+      eps  growth rate      r^2  |Q'|/eps final
+-----------------------------------------------
+2.500E-03     0.463301  0.91281       1.773E+02
+5.000E-03     0.463777  0.91338       1.778E+02
+1.000E-02     0.465152  0.91482       1.793E+02
+-----------------------------------------------
+scaled-norm spread   0.6763 %
+growth-rate spread  1.851E-03
+mean growth rate    4.641E-01
+verdict                LINEAR
+
+Q' scales proportionally with eps and the growth rate is amplitude-independent: the snapshots represent the linearised operator.
+
+exact inviscid growth rate :   0.343327
+viscous exact (Chandrasekhar):   0.329367
+viscous approx (Weber)     :   0.328941
+recommended amplitude      :    1.000E-02

@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+sw080_16.dat,  0.8000,  1.14125994E+01,  1.39199129E+01,30,  3.08924070E-01,  9.7152E-07,  0.7746,T,F,  3.08989423E-01,  3.26909267E-01,  3.08291364E-01

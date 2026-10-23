@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/sw020_16.dat,  0.2000,  2.09386773E+01,  3.13101717E+01,54,  1.36432088E-01,  3.8185E-07,  1.4150,T,F,  1.37029045E-01,  1.38219520E-01,  1.36671216E-01

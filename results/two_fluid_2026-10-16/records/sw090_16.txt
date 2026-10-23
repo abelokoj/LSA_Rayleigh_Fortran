@@ -1,0 +1,10 @@
+record: sw090_16.dat
+  samples 162   t =     0.0000 ..    17.7533
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =    16.4301 ..    17.6430  (12 samples,   0.30 e-folds)
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.245468   1 - r^2 =  1.508E-06
+  viscous exact  =   0.242730   (   1.128 %)
+  inviscid       =   0.264730   (  -7.276 %)
+  two-fluid visc =   0.242064   (   1.406 %)
+  wrote /sessions/nice-gallant-curie/mnt/code/LSA_Rayleigh/analysis and results/2026-10-16_two_fluid/records/sw090_16.csv

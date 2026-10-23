@@ -1,0 +1,18 @@
+record: runs/records/mug10_16.dat
+  samples 162   t =     0.0000 ..    13.0024
+  amplitude bound a/r0 <=  0.100   (not reached)
+  window t =     8.7221 ..    13.0024  (54 samples,   1.41 e-folds)
+  growth rate s =   0.328906   1 - r^2 =  2.920E-07
+  viscous exact  =   0.329367   (  -0.140 %)
+  inviscid       =   0.343327   (  -4.200 %)
+  two-fluid visc =   0.329176   (  -0.082 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      6.9454      0.328369        76   2.297E-06
+      7.9953      0.328740        63   6.498E-07
+      9.0452      0.328963        50   2.163E-07
+     10.0143      0.329094        38   1.534E-07
+     11.0642      0.329224        25   2.877E-07
+  spread  8.556E-04  (  0.260 % of the rate)
+  wrote runs/analysis/records/mug10_16.csv

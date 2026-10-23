@@ -1,0 +1,10 @@
+record: lin100_16.dat
+  samples 162   t =     0.0000 ..    13.0024
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     7.8338 ..     8.9644  (15 samples,   0.37 e-folds)
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.327164   1 - r^2 =  8.418E-07
+  viscous exact  =   0.329367   (  -0.669 %)
+  inviscid       =   0.343327   (  -4.708 %)
+  two-fluid visc =   0.328689   (  -0.464 %)
+  wrote /sessions/nice-gallant-curie/mnt/code/LSA_Rayleigh/analysis and results/2026-10-16_two_fluid/records/lin100_16.csv

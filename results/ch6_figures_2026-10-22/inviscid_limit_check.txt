@@ -1,0 +1,10 @@
+ambient density 1.0, viscosity ratio mu2/mu1 = 0.5
+k=0.5 Rw=1.5: inviscid confined 0.225033 (unconfined 0.283015, wall effect -20.49 %); viscous - confined inviscid:  oh=1e-02: -3.31e-01  oh=1e-04: -2.45e-02  oh=1e-06: -2.38e-03  oh=1e-08: -2.37e-04  oh=1e-10: -2.37e-05
+k=0.5 Rw=2.0: inviscid confined 0.258488 (unconfined 0.283015, wall effect -8.67 %); viscous - confined inviscid:  oh=1e-02: -1.62e-01  oh=1e-04: -1.37e-02  oh=1e-06: -1.35e-03  oh=1e-08: -1.35e-04  oh=1e-10: -1.35e-05
+k=0.5 Rw=4.0: inviscid confined 0.281071 (unconfined 0.283015, wall effect -0.69 %); viscous - confined inviscid:  oh=1e-02: -1.05e-01  oh=1e-04: -9.49e-03  oh=1e-06: -9.39e-04  oh=1e-08: -9.38e-05  oh=1e-10: -9.38e-06
+k=0.7 Rw=1.5: inviscid confined 0.256455 (unconfined 0.312419, wall effect -17.91 %); viscous - confined inviscid:  oh=1e-02: -3.06e-01  oh=1e-04: -2.30e-02  oh=1e-06: -2.24e-03  oh=1e-08: -2.23e-04  oh=1e-10: -2.23e-05
+k=0.7 Rw=2.0: inviscid confined 0.291706 (unconfined 0.312419, wall effect -6.63 %); viscous - confined inviscid:  oh=1e-02: -1.55e-01  oh=1e-04: -1.32e-02  oh=1e-06: -1.30e-03  oh=1e-08: -1.30e-04  oh=1e-10: -1.30e-05
+k=0.7 Rw=4.0: inviscid confined 0.311562 (unconfined 0.312419, wall effect -0.27 %); viscous - confined inviscid:  oh=1e-02: -1.09e-01  oh=1e-04: -9.73e-03  oh=1e-06: -9.62e-04  oh=1e-08: -9.61e-05  oh=1e-10: -9.60e-06
+k=0.9 Rw=1.5: inviscid confined 0.197968 (unconfined 0.234138, wall effect -15.45 %); viscous - confined inviscid:  oh=1e-02: -3.60e-01  oh=1e-04: -2.64e-02  oh=1e-06: -2.56e-03  oh=1e-08: -2.56e-04  oh=1e-10: -2.55e-05
+k=0.9 Rw=2.0: inviscid confined 0.222592 (unconfined 0.234138, wall effect -4.93 %); viscous - confined inviscid:  oh=1e-02: -1.89e-01  oh=1e-04: -1.56e-02  oh=1e-06: -1.53e-03  oh=1e-08: -1.53e-04  oh=1e-10: -1.53e-05
+k=0.9 Rw=4.0: inviscid confined 0.233901 (unconfined 0.234138, wall effect -0.10 %); viscous - confined inviscid:  oh=1e-02: -1.42e-01  oh=1e-04: -1.23e-02  oh=1e-06: -1.21e-03  oh=1e-08: -1.21e-04  oh=1e-10: -1.21e-05

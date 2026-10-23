@@ -1,0 +1,5 @@
+n_space = 832
+n_modes = 10
+grid_nx_ny_ncomp = 64 208 1
+layout = for each mode: n_space real parts, then n_space imaginary parts; within a part, component-major, then z (ny), then r (nx) fastest
+python = m = np.fromfile('modes.bin','<f8').reshape(n_modes, 2, n_space); phi = m[:,0] + 1j*m[:,1]

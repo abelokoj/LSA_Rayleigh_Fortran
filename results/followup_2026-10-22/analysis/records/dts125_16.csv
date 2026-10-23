@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/dts125_16.dat,  0.7000,  8.96905960E+00,  1.30459049E+01,51,  3.28411718E-01,  3.3722E-07,  1.3389,T,F,  3.29367103E-01,  3.43326801E-01,  3.28688702E-01

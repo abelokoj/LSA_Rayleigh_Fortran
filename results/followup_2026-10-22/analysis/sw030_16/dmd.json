@@ -1,0 +1,10 @@
+{
+  "kr0":     0.300000,
+  "growth_rate_dmd": 2.0067216992E-01,
+  "growth_rate_fit": 1.9781254900E-01,
+  "r_squared": 9.9999527183E-01,
+  "growth_rate_exact_inviscid": 2.0123647173E-01,
+  "growth_rate_viscous_exact": 1.9857388459E-01,
+  "growth_rate_two_fluid_inviscid": 2.0122826095E-01,
+  "growth_rate_viscous_estimate": 1.9855458394E-01
+}

@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid,visc_two_fluid
+runs/records/amp08_050.dat,  0.7000,  8.93492401E+00,  1.09907472E+01,27,  3.30026422E-01,  5.6459E-07,  0.6785,T,T,  3.29367103E-01,  3.43326801E-01,  3.28688702E-01

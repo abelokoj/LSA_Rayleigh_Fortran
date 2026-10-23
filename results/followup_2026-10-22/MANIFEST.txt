@@ -1,0 +1,8 @@
+collected      2026-10-22 07:18:04 EDT on h22-login-26.rcc.fsu.edu
+from           /gpfs/home/ao20bj/amrex_implicit_interfaces/NS_fluids_lib/LSA_Rayleigh_Fortran/runs
+analysis code  98c4265 2026-10-21 Follow-up results: viscous ambient wall check, linearity at 32 cells
+solver commit  dddb827c
+files          1510
+size           166M
+
+Large files left on the cluster are listed in SKIPPED.txt.

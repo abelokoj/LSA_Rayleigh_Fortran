@@ -1,0 +1,18 @@
+record: runs/records/domain06.dat
+  samples 125   t =     0.0000 ..    15.1288
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     6.0269 ..     6.7649  (7 samples,   0.24 e-folds)
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.322886   1 - r^2 =  2.597E-06
+  viscous exact  =   0.329367   (  -1.968 %)
+  inviscid       =   0.343327   (  -5.954 %)
+  two-fluid visc =   0.328689   (  -1.766 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      8.1179           n/a
+      9.3478           n/a
+     10.5778           n/a
+     11.8078           n/a
+     13.0378           n/a
+  wrote runs/analysis/records/domain06.csv

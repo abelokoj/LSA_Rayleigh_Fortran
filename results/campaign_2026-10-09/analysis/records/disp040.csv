@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid
+runs/records/disp040.dat,  0.4000,  8.15144081E+00,  8.96658489E+00,6,  2.47417098E-01,  1.9057E-06,  0.2017,T,T,  2.51992060E-01,  2.56692191E-01

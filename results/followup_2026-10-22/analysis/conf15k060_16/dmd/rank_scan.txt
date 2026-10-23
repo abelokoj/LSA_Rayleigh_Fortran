@@ -1,0 +1,5 @@
+# rank scan 4 .. 16
+median_rate =   3.1436824419962817E-01
+iqr =   6.0726051453474650E-04
+ranks_with_rate = 13
+visc_exact =   3.2174318737002416E-01

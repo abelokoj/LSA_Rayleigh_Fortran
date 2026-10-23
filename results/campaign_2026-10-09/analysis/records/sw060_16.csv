@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid
+runs/records/sw060_16.dat,  0.6000,  8.72522543E+00,  1.33347785E+01,57,  3.20560127E-01,  2.3747E-07,  1.4776,T,F,  3.21743187E-01,  3.32127868E-01

@@ -1,0 +1,5 @@
+# campaign_amp08.txt -- C3, amplitude window at 8 cells per radius: the three amplitudes of the 16-cell linearity set (eps = 2.5e-3, 5e-3, 1e-2) with one twin, k r0 = 0.7. Cheap. Submit: WALLTIME=04:00:00 scripts/submit_hpc_array.sh campaign_amp08.txt 8
+amp08_025        0.7   2.5e-3  8   4.0   4.3   160
+amp08_050        0.7   5e-3    8   4.0   4.3   160
+amp08_100        0.7   1e-2    8   4.0   4.3   160
+amp08.base       0.7   0       8   4.0   4.3   160

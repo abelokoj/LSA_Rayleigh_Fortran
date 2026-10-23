@@ -1,0 +1,17 @@
+record: runs/records/meas32.dat
+  samples 162   t =     0.0000 ..    10.6305
+  amplitude bound a/r0 <=  0.100   (not reached)
+  window t =     8.6373 ..    10.6305  (32 samples,   0.65 e-folds)
+  growth rate s =   0.327935   1 - r^2 =  6.819E-07
+  viscous exact  =   0.329367   (  -0.435 %)
+  inviscid       =   0.343327   (  -4.483 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      5.7139      0.325462        76   1.881E-05
+      6.5776      0.326499        63   6.946E-06
+      7.4414      0.327226        50   2.614E-06
+      8.2387      0.327727        38   1.027E-06
+      9.1024      0.328168        25   3.949E-07
+  spread  2.706E-03  (  0.825 % of the rate)
+  wrote runs/analysis/records/meas32.csv

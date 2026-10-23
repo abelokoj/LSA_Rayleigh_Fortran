@@ -1,0 +1,31 @@
+# campaign_next_16.txt -- follow-up runs at 16 cells per radius (October 2026, second campaign). Submit on 16 ranks: WALLTIME=12:00:00 scripts/submit_hpc_array.sh campaign_next_16.txt 16
+#
+# Columns: label kr0 eps cells_per_r0 rmax n_periods snapshots [make_inputs options]. A label ending in .base is the unperturbed twin; each perturbed case has its own twin because every deck differs (wavenumber, wall or gas).
+#
+# C1. Longer windows near the cut-off. At eps = 2.5e-3 the k r0 = 0.9 window is only 0.30 e-folds. eps = 1e-3 adds ln(2.5) = 0.92 e-folds before a/r0 = 0.1; n_periods 5.2 = ln(0.1/1e-3) + 0.6 of start-up lag. k r0 = 0.95 shows the approach to the cut-off.
+sw090e1_16       0.9   1e-3   16   4.0   5.2   200
+sw090e1_16.base  0.9   0      16   4.0   5.2   200
+sw095e1_16       0.95  1e-3   16   4.0   5.2   200
+sw095e1_16.base  0.95  0      16   4.0   5.2   200
+#
+# C2. Confined column: a no-slip wall at r = 1.5, 2 and 3 R0 (4 and 6 exist: sw070_16, dom06_16), at k r0 = 0.7, and at the tightest wall also k r0 = 0.5, 0.6 and 0.8 to locate the most unstable wavenumber. The wall slows the instability, and make_inputs sizes runs from the free-column rate, so n_periods is raised to 5.5 to still reach a/r0 = 0.1.
+conf30_16        0.7   2.5e-3 16   3.0   5.5   180   --eps-cells 0.04
+conf30_16.base   0.7   0      16   3.0   5.5   180
+conf20_16        0.7   2.5e-3 16   2.0   5.5   180   --eps-cells 0.04
+conf20_16.base   0.7   0      16   2.0   5.5   180
+conf15_16        0.7   2.5e-3 16   1.5   5.5   180   --eps-cells 0.04
+conf15_16.base   0.7   0      16   1.5   5.5   180
+conf15k050_16      0.5 2.5e-3 16   1.5   5.5   180   --eps-cells 0.04
+conf15k050_16.base 0.5 0      16   1.5   5.5   180
+conf15k060_16      0.6 2.5e-3 16   1.5   5.5   180   --eps-cells 0.04
+conf15k060_16.base 0.6 0      16   1.5   5.5   180
+conf15k080_16      0.8 2.5e-3 16   1.5   5.5   180   --eps-cells 0.04
+conf15k080_16.base 0.8 0      16   1.5   5.5   180
+#
+# C4. Viscous ambient at k r0 = 0.7, Oh = 0.02: gas viscosity mu_2/mu_1 = 0.1, 0.3 and 1 (the campaign used 0.013), gas density unchanged. Compared with the two-fluid viscous relation (run_lsa theory --mu-g). The more viscous ambient slows the growth, so n_periods is raised to 5.0.
+visc010_16       0.7   2.5e-3 16   4.0   5.0   180   --eps-cells 0.04 --mu-g 0.002
+visc010_16.base  0.7   0      16   4.0   5.0   180   --mu-g 0.002
+visc030_16       0.7   2.5e-3 16   4.0   5.0   180   --eps-cells 0.04 --mu-g 0.006
+visc030_16.base  0.7   0      16   4.0   5.0   180   --mu-g 0.006
+visc100_16       0.7   2.5e-3 16   4.0   5.0   180   --eps-cells 0.04 --mu-g 0.02
+visc100_16.base  0.7   0      16   4.0   5.0   180   --mu-g 0.02

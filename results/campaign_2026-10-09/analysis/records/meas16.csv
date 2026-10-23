@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid
+runs/records/meas16.dat,  0.7000,  8.41460865E+00,  1.06324125E+01,36,  3.27885829E-01,  6.1112E-07,  0.7272,T,F,  3.29367103E-01,  3.43326801E-01

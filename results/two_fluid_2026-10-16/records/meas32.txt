@@ -1,0 +1,9 @@
+record: meas32.dat
+  samples 162   t =     0.0000 ..    10.6305
+  amplitude bound a/r0 <=  0.100   (not reached)
+  window t =     8.6373 ..    10.6305  (32 samples,   0.65 e-folds)
+  growth rate s =   0.327935   1 - r^2 =  6.819E-07
+  viscous exact  =   0.329367   (  -0.435 %)
+  inviscid       =   0.343327   (  -4.483 %)
+  two-fluid visc =   0.328689   (  -0.229 %)
+  wrote /sessions/nice-gallant-curie/mnt/code/LSA_Rayleigh/analysis and results/2026-10-16_two_fluid/records/meas32.csv

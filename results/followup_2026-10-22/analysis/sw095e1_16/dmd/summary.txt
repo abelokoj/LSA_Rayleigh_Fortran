@@ -1,0 +1,14 @@
+leading_stationary_growth_rate =   2.0357300864451375E-01
+rank = 4
+rank_requested = 0
+reduced_map_residual =   1.2613372047777746E-03
+dt =   1.4893837700716051E-01
+n_snapshots = 5
+t_first =   2.8745106764078390E+01
+t_last =   2.9340860272141857E+01
+skip = 193
+stride = 1
+amplitude_snapshot = 1
+weight = volume
+grid_nx_ny_ncomp = 64 112 2
+fields = x_velocity y_velocity

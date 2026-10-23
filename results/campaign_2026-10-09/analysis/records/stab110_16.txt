@@ -1,0 +1,17 @@
+record: runs/records/stab110_16.dat
+  samples 201   t =     0.0000 ..    19.9880
+  amplitude bound a/r0 <=  0.100   (not reached)
+  window t =    10.0939 ..    19.9880  (100 samples,   0.01 e-folds)
+  WARNING: the local growth rate never settled to within the tolerance; the window is the second half of the linear part and the rate is a finite-window value, not an asymptotic one
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.000902   1 - r^2 =  1.000E+00
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+     10.6936      0.037900        94   9.895E-01
+     12.2926      0.205689        78   8.014E-01
+     13.8916      0.493115        62   4.091E-01
+     15.4907      0.213647        46   2.221E-01
+     17.0897      0.070050        30   3.155E-01
+  spread  4.552E-01  (******* % of the rate)
+  wrote runs/analysis/records/stab110_16.csv

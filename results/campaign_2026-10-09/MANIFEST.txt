@@ -1,0 +1,8 @@
+collected      2026-10-09 21:39:21 EDT on h22-login-26.rcc.fsu.edu
+from           /gpfs/home/ao20bj/amrex_implicit_interfaces/NS_fluids_lib/LSA_Rayleigh_Fortran/runs
+analysis code  f9ae176 2026-10-09 Reading guide: typeset the mathematics for readability
+solver commit  dddb827c
+files          653
+size           37M
+
+Large files left on the cluster are listed in SKIPPED.txt.

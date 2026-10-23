@@ -1,0 +1,14 @@
+--- 2026-10-17 13:49:14
+label           = conf20_16.base
+case_line       = conf20_16.base 0.7 0 16 2.0 5.5 180 
+host            = hpc-m36-1-2.local
+slurm_job       = 13230601 array=13230407_8
+launcher        = srun --cpu-bind=none
+mpi_ranks       = 16
+max_grid_size   = 16
+solver          = /gpfs/home/ao20bj/amrex_implicit_interfaces/NS_fluids_lib/amr2d.gnu.MPI.ex
+solver_md5      = eeeee45161e1267ea7b36012ec1531d8
+solver_commit   = dddb827c3516299d52a2d86ec0fc0a4e49aeb2d8
+deck_md5        = 5a5fba38be9aba8896fd5cdd04be684a
+solver_opts     = mac.mac_abs_tol=1.0e-10 mac.visc_abs_tol=1.0e-10 amr.check_int=500
+modules         = gnu/13 openmpi/4.1.6 

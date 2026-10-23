@@ -1,0 +1,18 @@
+record: runs/records/disp030.dat
+  samples 123   t =     0.0000 ..    24.9818
+  amplitude bound a/r0 <=  0.100   (reached)    
+  window t =     5.7809 ..    11.3553  (28 samples,   1.04 e-folds)
+  WARNING: the local growth rate never settled to within the tolerance; the window is the second half of the linear part and the rate is a finite-window value, not an asymptotic one
+  growth rate s =   0.185892   1 - r^2 =  4.836E-04
+  viscous exact  =   0.198574   (  -6.386 %)
+  inviscid       =   0.201236   (  -7.625 %)
+  two-fluid visc =   0.198138   (  -6.180 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+     13.4200           n/a
+     15.4846           n/a
+     17.5492           n/a
+     19.4073           n/a
+     21.4719           n/a
+  wrote runs/analysis/records/disp030.csv

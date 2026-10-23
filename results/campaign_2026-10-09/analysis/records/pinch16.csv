@@ -1,0 +1,2 @@
+record,kr0,t_lo,t_hi,n,rate,one_minus_r2,efolds,settled,bounded,visc_exact,inviscid
+runs/records/pinch16.dat,  0.7000,  6.11293829E+00,  6.78387054E+00,10,  3.21687984E-01,  3.3538E-06,  0.2158,T,T,  3.29367103E-01,  3.43326801E-01

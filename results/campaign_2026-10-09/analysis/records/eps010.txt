@@ -1,0 +1,19 @@
+record: runs/records/eps010.dat
+  samples 65   t =     0.0000 ..     3.5977
+  amplitude bound a/r0 <=  0.100   (not reached)
+  window t =     1.8274 ..     3.5977  (33 samples,   0.43 e-folds)
+  WARNING: the local growth rate never settled to within the tolerance; the window is the second half of the linear part and the rate is a finite-window value, not an asymptotic one
+  WARNING: the window spans less than half an e-fold; the rate is poorly constrained
+  growth rate s =   0.242302   1 - r^2 =  2.615E-03
+  viscous exact  =   0.329367   ( -26.434 %)
+  inviscid       =   0.343327   ( -29.425 %)
+
+  start-time sensitivity (upper end fixed):
+     t_start          rate   samples     1 - r^2
+      1.9416      0.245473        31   2.107E-03
+      2.2842      0.254330        25   1.041E-03
+      2.5698      0.260985        20   5.245E-04
+      2.8553      0.267012        15   2.267E-04
+      3.1408      0.272429        10   7.159E-05
+  spread  2.696E-02  ( 11.125 % of the rate)
+  wrote runs/analysis/records/eps010.csv

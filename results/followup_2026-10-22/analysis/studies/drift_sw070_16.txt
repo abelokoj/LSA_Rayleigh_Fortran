@@ -1,0 +1,6 @@
+drift of runs/sw070_16.base
+  plotfiles 162   t =     0.0000 ..    13.0024   grid 64 x 144
+                 L0101  max |dQ| over run   0.000E+00   final rms   0.000E+00   max |Q0|   4.855E-01
+            x_velocity  max |dQ| over run   3.460E-14   final rms   1.200E-15   max |Q0|   0.000E+00
+            y_velocity  max |dQ| over run   1.711E-14   final rms   7.689E-16   max |Q0|   0.000E+00
+  wrote runs/analysis/studies/drift_sw070_16.csv

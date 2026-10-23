@@ -1,0 +1,75 @@
+# Output of plotting/weighting_test.py on the cluster, 22 October 2026 (Table 6.3 of the dissertation). Command, run in the solver tree after the analysis job:
+#   python3 plotting/weighting_test.py runs/analysis sw040_16 sw050_16 sw060_16 sw070_16 sw080_16 meas16 meas32 conf15_32 visc100r8_16
+# The terminal session also held a git pull and an unrelated log check; only the output of this command is kept.
+== sw040_16: snapshots 101..160 (dt = 0.106178); ||level-set block|| / ||velocity block|| at lambda = 1: 0.825
+   velocity only            rate 0.252225   IQR 1.39e-03
+   lambda = 0.01            rate 0.252212   IQR 1.42e-03
+   lambda = 0.1             rate 0.252106   IQR 1.53e-03
+   lambda = 1               rate 0.251170   IQR 8.50e-04
+   lambda = 10              rate 0.250509   IQR 9.93e-04
+   lambda = 100             rate 0.250558   IQR 2.26e-03
+   level set only (band)    rate 0.250744   IQR 6.45e-04
+== sw050_16: snapshots 102..160 (dt = 0.0903994); ||level-set block|| / ||velocity block|| at lambda = 1: 0.871
+   velocity only            rate 0.294571   IQR 2.17e-03
+   lambda = 0.01            rate 0.294555   IQR 2.16e-03
+   lambda = 0.1             rate 0.294415   IQR 2.04e-03
+   lambda = 1               rate 0.293564   IQR 1.48e-03
+   lambda = 10              rate 0.292038   IQR 1.31e-03
+   lambda = 100             rate 0.292610   IQR 2.78e-03
+   level set only (band)    rate 0.292857   IQR 5.66e-04
+== sw060_16: snapshots 107..162 (dt = 0.0823134); ||level-set block|| / ||velocity block|| at lambda = 1: 0.939
+   velocity only            rate 0.322156   IQR 1.75e-03
+   lambda = 0.01            rate 0.322139   IQR 1.74e-03
+   lambda = 0.1             rate 0.321997   IQR 1.62e-03
+   lambda = 1               rate 0.320868   IQR 1.45e-03
+   lambda = 10              rate 0.320234   IQR 1.73e-03
+   lambda = 100             rate 0.320350   IQR 3.26e-03
+   level set only (band)    rate 0.322023   IQR 2.03e-03
+== sw070_16: snapshots 111..160 (dt = 0.0807604); ||level-set block|| / ||velocity block|| at lambda = 1: 1.05
+   velocity only            rate 0.330017   IQR 2.23e-03
+   lambda = 0.01            rate 0.329994   IQR 2.20e-03
+   lambda = 0.1             rate 0.329801   IQR 1.92e-03
+   lambda = 1               rate 0.328533   IQR 1.99e-03
+   lambda = 10              rate 0.326988   IQR 1.44e-03
+   lambda = 100             rate 0.327476   IQR 2.27e-03
+   level set only (band)    rate 0.327159   IQR 8.60e-04
+== sw080_16: snapshots 133..161 (dt = 0.0864591); ||level-set block|| / ||velocity block|| at lambda = 1: 1.24
+   velocity only            rate 0.339769   IQR 2.38e-02
+   lambda = 0.01            rate 0.339544   IQR 2.37e-02
+   lambda = 0.1             rate 0.338052   IQR 2.35e-02
+   lambda = 1               rate 0.334191   IQR 5.17e-02
+   lambda = 10              rate 0.300336   IQR 5.49e-03
+   lambda = 100             rate 0.306168   IQR 1.16e-03
+   level set only (band)    rate 0.306148   IQR 3.13e-04
+== meas16: snapshots 130..163 (dt = 0.0652295); ||level-set block|| / ||velocity block|| at lambda = 1: 1.05
+   velocity only            rate 0.334151   IQR 2.37e-02
+   lambda = 0.01            rate 0.334070   IQR 2.34e-02
+   lambda = 0.1             rate 0.333406   IQR 2.08e-02
+   lambda = 1               rate 0.331062   IQR 2.15e-02
+   lambda = 10              rate 0.329268   IQR 1.34e-02
+   lambda = 100             rate 0.327348   IQR 2.17e-03
+   level set only (band)    rate 0.326530   IQR 5.58e-04
+== meas32: snapshots 130..160 (dt = 0.0664409); ||level-set block|| / ||velocity block|| at lambda = 1: 1.04
+   velocity only            rate 0.331452   IQR 3.05e-03
+   lambda = 0.01            rate 0.331421   IQR 2.99e-03
+   lambda = 0.1             rate 0.331107   IQR 2.50e-03
+   lambda = 1               rate 0.329400   IQR 1.91e-03
+   lambda = 10              rate 0.326221   IQR 4.04e-03
+   lambda = 100             rate 0.324599   IQR 9.86e-04
+   level set only (band)    rate 0.326270   IQR 2.01e-03
+== conf15_32: snapshots 120..169 (dt = 0.0927976); ||level-set block|| / ||velocity block|| at lambda = 1: 1.02
+   velocity only            rate 0.319686   IQR 3.05e-03
+   lambda = 0.01            rate 0.319663   IQR 3.00e-03
+   lambda = 0.1             rate 0.319470   IQR 2.53e-03
+   lambda = 1               rate 0.317883   IQR 2.09e-03
+   lambda = 10              rate 0.317446   IQR 1.71e-03
+   lambda = 100             rate 0.317280   IQR 2.62e-03
+   level set only (band)    rate 0.317701   IQR 8.40e-05
+== visc100r8_16: snapshots 109..166 (dt = 0.0838665); ||level-set block|| / ||velocity block|| at lambda = 1: 1.01
+   velocity only            rate 0.304575   IQR 2.88e-04
+   lambda = 0.01            rate 0.304562   IQR 2.91e-04
+   lambda = 0.1             rate 0.304458   IQR 3.20e-04
+   lambda = 1               rate 0.303912   IQR 5.96e-04
+   lambda = 10              rate 0.303481   IQR 2.01e-04
+   lambda = 100             rate 0.303617   IQR 2.83e-04
+   level set only (band)    rate 0.303624   IQR 2.21e-04

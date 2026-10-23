@@ -1,0 +1,5 @@
+# campaign_amp32.txt -- C3, amplitude window at 32 cells per radius, k r0 = 0.7: the same three amplitudes with one twin. Expensive (the meas32 twin took about 22 h on 16 ranks for 3.5 e-folding times; these run 4.3). Submit: PACK=1 WALLTIME=36:00:00 scripts/submit_hpc_array.sh campaign_amp32.txt 16
+amp32_025        0.7   2.5e-3  32  4.0   4.3   160
+amp32_050        0.7   5e-3    32  4.0   4.3   160
+amp32_100        0.7   1e-2    32  4.0   4.3   160
+amp32.base       0.7   0       32  4.0   4.3   160

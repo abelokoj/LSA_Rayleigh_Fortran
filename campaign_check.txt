@@ -1,0 +1,13 @@
+# campaign_check.txt -- two checks on provisional follow-up results (20 October 2026). Submit on 16 ranks; see estimate_cost.sh for the wall time.
+#
+# Columns: label kr0 eps cells_per_r0 rmax n_periods snapshots [make_inputs options]. A label ending in .base is the unperturbed twin.
+#
+# C2 check. The wall at 1.5 R0 lowered the rate by 3 % at 16 cells, but the gap then holds only 8 cells. The same case at 32 cells separates the physics from the resolution of the gap.
+conf15_32        0.7   2.5e-3 32   1.5   5.5   180   --eps-cells 0.04
+conf15_32.base   0.7   0      32   1.5   5.5   180
+#
+# C4 check. At mu_2/mu_1 = 1 the rate is 2 % below the two-fluid viscous relation, and the gas viscous length sqrt(nu_2/s) (about 7 R0) passes the wall at 4 R0. Moving the wall to 6 and 8 R0 tests whether the deficit is the wall.
+visc100r6_16      0.7  2.5e-3 16   6.0   5.0   180   --eps-cells 0.04 --mu-g 0.02
+visc100r6_16.base 0.7  0      16   6.0   5.0   180   --mu-g 0.02
+visc100r8_16      0.7  2.5e-3 16   8.0   5.0   180   --eps-cells 0.04 --mu-g 0.02
+visc100r8_16.base 0.7  0      16   8.0   5.0   180   --mu-g 0.02

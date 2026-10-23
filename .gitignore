@@ -1,0 +1,17 @@
+# Build products
+build/
+bin/
+*.o
+*.mod
+
+# Simulation output and locally generated figures
+runs/
+figures/
+krylov_test/runs/
+krylov_test/analysis/
+
+# Logs and caches
+slurm-*.out
+slurm-*.err
+__pycache__/
+*.pyc
