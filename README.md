@@ -35,6 +35,7 @@ make test       # the automated test suite; must end with ALL TEST PROGRAMS PASS
 | Decomposition evidence and mode shapes (Ch. 5) | `analysis/sw070_16/` (`dmd`, `dmd_ls`, `converge.csv`), `analysis/<case>/studies/modes/` | `plotting/thesis/make_dmd_evidence_figures.py`, `plotting/check_mode_shapes_confined.py` |
 | Comparison with three relations (Table 6.1) | `summary.csv` | `print_thesis_tables.py` |
 | Linearity at 8, 16, 32 cells per R₀ (Table 6.2) | `analysis/linearity_08.txt`, `_16.txt`, `_32.txt`, `summary.csv` | `print_thesis_tables.py` |
+| Linearity in direction: scaled fields compared at matched times (Ch. 5) | `results/linearity_fields_2026-10-23/` (README with the summary table) | `scripts/linearity_fields.sh`, `plotting/linearity_fields.py` |
 | Confined column and viscous ambient (Ch. 6) | `results/ch6_figures_2026-10-22/` (figures, `confined_comparison.csv`, theory tables) | `plotting/compare_confined.py`, `plotting/plot_followup_ch6.py`, `plotting/make_confined_tables.py` |
 | Weighting of velocity and level set (Table 6.3) | `results/estimators_2026-10-22/weighting_test_output_2026-10-22.txt` | `print_thesis_tables.py`; the test itself is `plotting/weighting_test.py` |
 | Choice of estimator and the quoting rule (Ch. 4) | `results/estimators_2026-10-22/table.md`, `all_estimators.csv` | — |

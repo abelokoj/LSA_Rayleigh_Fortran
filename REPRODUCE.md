@@ -113,7 +113,7 @@ The gallery command also draws the rest of the campaign's figure set (growth cur
 
 ### 2.5 What Level 2 does not recompute
 
-The decompositions themselves (singular values, eigenvalues, modes) are read from their stored outputs in `results/*/analysis/<case>/dmd`, `dmd_ls` and `studies/`. Repeating them needs the lossless twin-difference exports (`perturbation.bin`, up to 70 MB per case, about 1 GB in all), which stayed on the cluster and are listed in each snapshot's `SKIPPED.txt`; Level 3 regenerates them. The one export included is `results/exports/meas16/`, for the perturbation-field figure. Likewise the weighting test (Table 6.3) is read from its stored output and repeated in Level 3.
+The decompositions themselves (singular values, eigenvalues, modes) are read from their stored outputs in `results/*/analysis/<case>/dmd`, `dmd_ls` and `studies/`. Repeating them needs the lossless twin-difference exports (`perturbation.bin`, up to 70 MB per case, about 1 GB in all), which stayed on the cluster and are listed in each snapshot's `SKIPPED.txt`; Level 3 regenerates them. The one export included is `results/exports/meas16/`, for the perturbation-field figure. Likewise the weighting test (Table 6.3) and the field-direction linearity test (Section 5.5, `results/linearity_fields_2026-10-23/`) are read from their stored outputs and repeated in Level 3.
 
 ## Level 3. Rerun the simulations
 
@@ -189,6 +189,7 @@ The analysis job (`scripts/analyse_campaign.sh`, through `scripts/_post_task.sh`
 cd $LSA
 sbatch -A <account> -n 1 -c 4 --mem=16G -t 04:00:00 -o runs/array/studies-%j.out scripts/run_studies.sh all       # band, stride, drift and mode studies
 sbatch -A <account> -n 1 -c 2 --mem=8G  -t 02:00:00 -o runs/array/linearity-%j.out scripts/linearity_08_32.sh 08 32   # Table 6.2, 8 and 32 cells
+sbatch -A <account> -n 1 -c 4 --mem=32G -t 04:00:00 -o runs/array/linfields-%j.out scripts/linearity_fields.sh        # Section 5.5: scaled fields compared in direction (velocity, level set whole and band 2), 8, 16, 32 cells
 python3 plotting/weighting_test.py runs/analysis sw040_16 sw050_16 sw060_16 sw070_16 sw080_16 meas16 meas32 conf15_32 visc100r8_16 > runs/analysis/weighting_test_output.txt   # Table 6.3
 ```
 
